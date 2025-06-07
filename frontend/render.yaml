@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: findmybite
+    env: static
+    staticPublishPath: dist/retaurantes-frontend
+    routes:
+      - type: rewrite
+        path: /*
+        dest: /index.html
